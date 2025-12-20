@@ -11,7 +11,7 @@ def createpassword(password_length, string_character=True, special_character=Tru
     has_number=False
     has_special_character=False
     meets_criteria=False
-    while len(password)!=password_length and meets_criteria==False:
+    while len(password)!=password_length and not meets_criteria:
         selected_char = random.choice([number, letter, special])
         finally_chosen = random.choice(selected_char)
         password+=finally_chosen
