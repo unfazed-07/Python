@@ -1,0 +1,21 @@
+from bank_accounts import *
+
+Dave = BankAccount(1000, "Dave")
+Sara = BankAccount(2300, "Sara")
+
+Sara.deposit(500)
+Dave.withdraw(1200)
+Dave.withdraw(20)
+
+Dave.transfer(100, Sara)
+
+Jim = InterestRewardsAcct(1000, 'Jim')
+#Jim.getBalance()
+Jim.deposit(100)
+Jim.transfer(100, Dave)
+
+
+Blaze = SavingsAcct(1000, "Blaze")
+Blaze.getBalance()
+Blaze.deposit(100)
+Blaze.transfer(10000, Sara)
